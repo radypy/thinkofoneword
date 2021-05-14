@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+</head>
+<body>
+    <div class= "initial-background" style="background-image: url({{url_for('static', filename='lightbulb.jpg')}})">
+    <div class="enter-word">
+        Enter your word in English</div>
+    <form method = "POST">
+        <input type="text" name="strword" required><br>
+        <br>
+        <button type="submit" id ="button" name = "submit">
+            Submit</button>
+    </form>
+    </div>
+</body>
+</html>
